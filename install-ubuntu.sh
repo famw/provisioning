@@ -35,7 +35,7 @@ install_mxe() {
 }
 
 install_mxe_requirements() {
-  apt-get install \
+  apt-get install -y \
     autoconf automake autopoint bash bison bzip2 flex gettext\
     git g++ gperf intltool libffi-dev libgdk-pixbuf2.0-dev \
     libtool libltdl-dev libssl-dev libxml-parser-perl make \
