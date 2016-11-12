@@ -44,7 +44,7 @@ install_mxe_requirements() {
 }
 
 install_wine() {
-  apt-get -y install --install-recommends wine
+  apt-get -y install --install-recommends winehq-staging
 }
 
 install_xvfb() {
@@ -59,10 +59,6 @@ install_pulseaudio() {
   apt-get -y install pulseaudio
 }
 
-install_ubuntu_desktop() {
-  apt-get -y install ubuntu-desktop
-}
-
 main() {
   create_workspace
   enable_32bit_arch
@@ -74,7 +70,6 @@ main() {
   install_xvfb
   install_x11vnc
   install_pulseaudio
-  install_ubuntu_desktop
 }
 
 main
