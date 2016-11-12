@@ -59,6 +59,10 @@ install_pulseaudio() {
   apt-get -y install pulseaudio
 }
 
+install_ubuntu_desktop() {
+  apt-get -y install ubuntu-desktop
+}
+
 main() {
   create_workspace
   enable_32bit_arch
@@ -70,6 +74,7 @@ main() {
   install_xvfb
   install_x11vnc
   install_pulseaudio
+  install_ubuntu_desktop
 }
 
 main
