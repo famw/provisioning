@@ -17,23 +17,23 @@ add_wine_repository() {
 }
 
 update_pkgs() {
-  apt-get update
+  apt-get -y update
 }
 
 install_wine() {
-  apt-get install --install-recommends wine
+  apt-get -y install --install-recommends wine
 }
 
 install_xvfb() {
-  apt-get install xvfb
+  apt-get -y install xvfb
 }
 
 install_x11vnc() {
-  apt-get install x11vnc
+  apt-get -y install x11vnc
 }
 
 install_pulseaudio() {
-  apt-get install pulseaudio
+  apt-get -y install pulseaudio
 }
 
 main() {
